@@ -1,7 +1,5 @@
 class Dice
   def roll(n=1)
-    array = []
-    n.times{array << rand(1..6)}
-    array
+    (1..n).to_a.map{rand(1..6)}
   end
 end

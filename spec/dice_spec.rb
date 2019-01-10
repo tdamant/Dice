@@ -1,12 +1,8 @@
 require 'dice'
 
 describe Dice do
-  it "rolling die should an integer" do
+  it "numbers rolled by die should integers" do
     expect(subject.roll[0]).to be_an_instance_of Integer
-  end
-
-  it "should always return number between 1 and 6" do
-    expect(subject.roll(100).select{|n| n < 1 || n > 6}).to eq []
   end
 
   it "should be random" do
