@@ -1,5 +1,5 @@
 class Dice
   def roll
-    2
+    rand(1..6)
   end
 end
