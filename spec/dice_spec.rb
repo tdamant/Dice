@@ -8,6 +8,8 @@ describe Dice do
   it "should be random" do
     srand(4)
     expect(subject.roll).to eq [3]
+    srand(189)
+    expect(subject.roll).to eq [1]
   end
 
   it "user should be able to specify the number of die to roll" do
